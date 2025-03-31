@@ -98,7 +98,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img
-                src="/assets/sriramthota.jpg"
+                src="/images/sriramthota.jpg"
                 alt="Profile"
                 className="about-image"
               />

@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="nav-logo">
           <img
-            src="/assets/portfoliologot.png"
+            src="/images/portfoliologot.png"
             alt="Sri Ram Thota Portfolio"
             className="profile-logo"
           />
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="nav-profile">
           <button type="button">
             <img
-              src="/assets/sriramthota.jpg"
+              src="/images/sriramthota.jpg"
               alt="Profile"
               className="profile-img"
             />
