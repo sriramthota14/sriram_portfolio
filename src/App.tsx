@@ -1,17 +1,19 @@
 import React from "react";
 import NavBar from "./components/navbar/NavBar";
+import Contact from "./components/contact/Contact";
+import Home from "./components/home/Home";
+import Projects from "./components/projects/projects";
+import About from "./components/about/About";
 
 function App() {
   return (
     <div className="min-h-screen">
       <NavBar />
       <main className="main-content">
-        <div className="container content-container">
-          <h1 className="title">Welcome to My Portfolio</h1>
-          <p className="subtitle">
-            Start prompting (or editing) to see magic happen :)
-          </p>
-        </div>
+        <Home></Home>
+        <Projects></Projects>
+        <About></About>
+        <Contact></Contact>
       </main>
     </div>
   );
