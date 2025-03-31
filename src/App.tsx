@@ -1,8 +1,7 @@
-import React from "react";
 import NavBar from "./components/navbar/NavBar";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
-import Projects from "./components/projects/projects";
+import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 
 function App() {

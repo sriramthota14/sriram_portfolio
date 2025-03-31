@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Code2, Briefcase, GraduationCap, Award } from "lucide-react";
 
@@ -99,7 +98,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src="./src/assets/sriramthota.jpg"
                 alt="Profile"
                 className="about-image"
               />

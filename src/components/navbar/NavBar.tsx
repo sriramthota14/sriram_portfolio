@@ -10,8 +10,11 @@ const Navbar = () => {
       <div className="container nav-container">
         {/* Logo */}
         <div className="nav-logo">
-          <Code2 />
-          <span>Portfolio</span>
+          <img
+            src="./src/assets/portfoliologot.png"
+            alt="Sri Ram Thota Portfolio"
+            className="profile-logo"
+          />
         </div>
 
         {/* Desktop Menu */}

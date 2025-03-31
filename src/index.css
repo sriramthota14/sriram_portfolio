@@ -76,13 +76,14 @@ body {
   top: 0;
   left: 0;
   z-index: 50;
+  min-height: 120px;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 8rem;
 }
 
 .nav-menu {
@@ -106,11 +107,16 @@ body {
 }
 
 .profile-img {
-  width: 2rem;
-  height: 2rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  object-fit: cover;
   border: 2px solid var(--color-primary);
+}
+
+.profile-logo {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .mobile-menu-btn {
