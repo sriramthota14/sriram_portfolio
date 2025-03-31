@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Code2, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
