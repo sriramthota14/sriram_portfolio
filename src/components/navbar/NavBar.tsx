@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Code2, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="nav-logo">
           <img
-            src="./src/assets/portfoliologot.png"
+            src="/images/portfoliologot.png"
             alt="Sri Ram Thota Portfolio"
             className="profile-logo"
           />
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="nav-profile">
           <button type="button">
             <img
-              src="./src/assets/sriramthota.jpg"
+              src="/images/sriramthota.jpg"
               alt="Profile"
               className="profile-img"
             />
