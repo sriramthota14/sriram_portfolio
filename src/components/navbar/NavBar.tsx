@@ -1,30 +1,42 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const menuItems = ["Home", "Projects", "About", "Contact"];
+  const menuItems = ["Home", "Projects", "About", "Contact", "Resume"];
+
+  const menuItemDisplay = menuItems.map((item) => {
+    if (item.toLocaleLowerCase() === "home") {
+      return (
+        <Link to="/" key={item}>
+          {item}
+        </Link>
+      );
+    }
+    return (
+      <Link to={`/${item.toLocaleLowerCase()}`} key={item}>
+        {item}
+      </Link>
+    );
+  });
 
   return (
     <nav className="nav">
       <div className="container nav-container">
         {/* Logo */}
         <div className="nav-logo">
-          <img
-            src="/images/portfoliologot.png"
-            alt="Sri Ram Thota Portfolio"
-            className="profile-logo"
-          />
+          <Link to="/">
+            <img
+              src="/images/portfoliologot.png"
+              alt="Sri Ram Thota Portfolio"
+              className="profile-logo"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
-        <div className="nav-menu">
-          {menuItems.map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`}>
-              {item}
-            </a>
-          ))}
-        </div>
+        <div className="nav-menu">{menuItemDisplay}</div>
 
         {/* Profile Picture */}
         <div className="nav-profile">
@@ -42,7 +54,7 @@ const Navbar = () => {
             className="mobile-menu-btn"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <Menu />
+            <Menu>{menuItemDisplay}</Menu>
           </button>
         </div>
       </div>
