@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import SocialMedia from "../socialmedia/SocialMedia";
 
 const Home = () => {
