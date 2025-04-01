@@ -1,12 +1,5 @@
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Github,
-  Linkedin,
-  Twitter,
-  Instagram,
-} from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import SocialMedia from "../socialmedia/SocialMedia";
 
 const Contact = () => {
   return (
@@ -44,40 +37,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="social-links">
-              <a
-                href="https://github.com/sriramthota14"
-                className="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github />
-              </a>
-              <a
-                href="www.linkedin.com/in/sri-ram-thota-6b53a3118"
-                className="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin />
-              </a>
-              <a
-                href="https://x.com/SriramThota14"
-                className="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter />
-              </a>
-              <a
-                href="https://www.instagram.com/_s.r.i.r.a.m1414/"
-                className="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram />
-              </a>
-            </div>
+            <SocialMedia />
           </div>
 
           <div className="contact-form">
